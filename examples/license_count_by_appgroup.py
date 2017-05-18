@@ -6,7 +6,7 @@ Sample script to generate a count of licenses used by app name, regardless of en
 (Prod, Devl, Qual, Cert, etc.)
 """
 
-from __future__ import print_function
+
 
 from datetime import datetime
 import itertools

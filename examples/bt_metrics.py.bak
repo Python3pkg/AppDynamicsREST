@@ -19,7 +19,7 @@ Example::
      python BTMetrics.py --controller=http://10.1.2.3:8090 --account=customer1 --username=demo --password=abc123
 """
 
-
+from __future__ import print_function
 
 from collections import defaultdict
 from datetime import datetime

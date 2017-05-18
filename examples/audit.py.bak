@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
+from __future__ import print_function
 
 from string import Template
 from datetime import datetime, timedelta
@@ -220,7 +220,7 @@ def create_temp_table(cur):
 
 def insert_object_crud(cur, params):
     try:
-        for table_name, table_data in list(AUDIT_TABLES.items()):
+        for table_name, table_data in AUDIT_TABLES.items():
             params.update({
                 'table_name': table_name,
                 'id_field': table_data.get('id_field', 'id'),
@@ -255,7 +255,7 @@ def insert_object_crud(cur, params):
 
 def insert_agent_configuration_crud(cur, params):
     try:
-        for entity_type, entity_data in list(ENTITY_TYPES.items()):
+        for entity_type, entity_data in ENTITY_TYPES.items():
             params.update({
                 'entity_type': entity_type,
                 'app_name_expr': entity_data.get('app_name_expr', 'NULL'),

@@ -2,7 +2,7 @@
 This module contains the main classes for handling requests to the AppDynamics REST API.
 """
 
-
+from __future__ import print_function
 
 import sys
 import requests

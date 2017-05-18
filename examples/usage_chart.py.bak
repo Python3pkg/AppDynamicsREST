@@ -50,5 +50,5 @@ chart = pygal.StackedBar(x_label_rotation=45, width=1000)
 chart.title = 'License Usage By Product - ' + c.base_url
 chart.x_labels = [str(x.date()) for x in daterange(start_dt, end_dt)]
 for product in products:
-    chart.add(product, list(usage_by_product[product].values()))
+    chart.add(product, usage_by_product[product].values())
 chart.render_to_file('all_usage.svg')

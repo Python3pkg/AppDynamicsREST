@@ -44,5 +44,5 @@ for day in daterange(start_dt, end_dt):
 chart = pygal.StackedBar(x_label_rotation=45, width=1000)
 chart.title = 'Java License Usage - ' + c.base_url
 chart.x_labels = [str(x.date()) for x in daterange(start_dt, end_dt)]
-chart.add('java', usage_by_day.values())
+chart.add('java', list(usage_by_day.values()))
 chart.render_to_file('java_usage.svg')

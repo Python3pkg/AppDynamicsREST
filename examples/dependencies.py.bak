@@ -7,7 +7,7 @@ This would include databases, message queues, web sites,
 Output format: ``app_name,tier_name,node_name,host_name``
 """
 
-
+from __future__ import print_function
 
 from appd.cmdline import parse_argv
 from appd.request import AppDynamicsClient

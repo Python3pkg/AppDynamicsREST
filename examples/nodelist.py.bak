@@ -6,7 +6,7 @@ Sample script to print a simple list of all the nodes registered with the contro
 Output format: ``app_name,tier_name,node_name,host_name``
 """
 
-
+from __future__ import print_function
 
 from appd.cmdline import parse_argv
 from appd.request import AppDynamicsClient
